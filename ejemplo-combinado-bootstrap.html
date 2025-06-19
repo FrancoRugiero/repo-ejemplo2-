@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyecto Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+  p{
+    background-color: white;
+    color: white;
+    padding: 3px;
+  }
+</style>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MiSitio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContenido">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenido -->
+  <div class="container mt-5">
+
+    <!-- Botones -->
+    <h2>Botones</h2>
+    <button class="btn btn-primary">Primario</button>
+    <button class="btn btn-danger">Peligro</button>
+    <button class="btn btn-success">Éxito</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+
+    <!-- Grid -->
+    <h2 class="mt-4">Sistema de Grid</h2>
+    <div class="row">
+      <div class="col-md-4 bg-primary text-white p-3">Columna 1</div>
+      <div class="col-md-4 bg-secondary text-white p-3">Columna 2</div>
+      <div class="col-md-4 bg-success text-white p-3">Columna 3</div>
+
+    </div>
+
+    <!-- Formulario -->
+    <h2 class="mt-4">Formulario</h2>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="correo@ejemplo.com">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Contraseña</label>
+        <input type="password" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <!-- Botón para modal -->
+    <h2 class="mt-4">Modal</h2>
+    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#miModal">Abrir Modal</button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="miModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Título del Modal</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">Este es un mensaje dentro del modal.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
